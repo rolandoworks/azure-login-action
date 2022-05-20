@@ -27,6 +27,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Login to Azure
-        run: azure/login@v1
+        uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
